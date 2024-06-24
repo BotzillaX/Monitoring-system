@@ -35,5 +35,5 @@ def getRamTemperature():
         return None
 
 if __name__ == "__main__":
-    total_memory, available_memory, used_memory, memory_percentage = ramUsage()
+    total_memory, available_memory, used_memory, memory_percentage, temperature = ramUsage()
   
