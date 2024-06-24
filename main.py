@@ -17,8 +17,8 @@ while True:
     totalMemory, available_memory, currently_using, currently_using_in_precentage, temperature = ramUsage() #RAM
     cpuUsage1 = cpuUsage()
     print(currentDate)
-    print(currently_using_in_precentage)
-    print(cpuUsage1)
+    print("Memory-Usage: "+str(currently_using_in_precentage))
+    print("CPU-Usage"+str(cpuUsage1))
     sleep(0.1)
     os.system('cls' if os.name == 'nt' else 'clear')
  
