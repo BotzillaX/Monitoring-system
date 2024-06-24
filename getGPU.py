@@ -12,12 +12,11 @@ def get_gpu_load():
 def print_gpu_load():
     gpu_load = get_gpu_load()
     if gpu_load is not None:
-        print(f"Current GPU Load: {gpu_load:.2f}%")
+        return gpu_load
     else:
         print("No GPU found.")
 
 if __name__ == "__main__":
-    while True:
-        print("\n" + "="*30 + " GPU Usage " + "="*30)
-        print_gpu_load()
-        time.sleep(1)  # Sleep for 1 second before printing the next reading
+
+    print(str(print_gpu_load())+ "%")
+    
