@@ -1,5 +1,4 @@
 import GPUtil
-import time
 
 def get_gpu_load():
     gpus = GPUtil.getGPUs()
