@@ -28,4 +28,3 @@ if __name__ == "__main__":
     while True:
         print("\n" + "="*30 + " GPU Usage " + "="*30)
         print_gpu_info()
-        time.sleep(5)
