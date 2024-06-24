@@ -2,6 +2,7 @@ import psutil
 import wmi
 
 def ramUsage():
+    
     virtual_memory = psutil.virtual_memory()
 
     total_memory = virtual_memory.total / (1024 ** 3)  # Convert to GB
@@ -14,7 +15,7 @@ def ramUsage():
     print("Used Memory: " + str(round(used_memory, 2)) + " GB")
     print("Memory Usage Percentage: " + str(memory_percentage) + "%")
 
-    return total_memory, available_memory, used_memory, memory_percentage
+    return total_memory, available_memory, used_memory, memory_percentage, getRamTemperature()
 
 def getRamTemperature():
     try:
@@ -35,4 +36,4 @@ def getRamTemperature():
 
 if __name__ == "__main__":
     total_memory, available_memory, used_memory, memory_percentage = ramUsage()
-    ram_temperature = getRamTemperature()
+  
